@@ -1,0 +1,160 @@
+
+body{
+//margin-left:180px;
+  display:flex;
+  //background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width:750px;
+  height: 200vh;
+  transform: translate(270px, 100px);
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+   animation:border 4s infinite  ease;
+}
+@keyframes border{
+  0%{
+   border-bottom-color: white;
+    border-left-color: blueviolet;
+    border-right-color:blueviolet;
+    border-top-color: blueviolet;
+  }
+  25%{
+    border-left-color: white;
+    border-bottom-color: blueviolet;
+    border-right-color:blueviolet;
+    border-top-color: blueviolet;
+  }
+  75%{
+border-bottom-color: blueviolet;
+    border-left-color: blueviolet;
+    border-right-color:blueviolet;
+    border-top-color: white;
+  }
+  100%{
+    border-bottom-color: blueviolet;
+    border-left-color: blueviolet;
+    border-right-color:white;
+    border-top-color: blueviolet;
+  }
+}
+p1{
+  color:blueviolet;
+  font-size: 50px;
+  margin-left:235px;
+  padding-bottom: 20px;
+  animation:movement 3s infinite  ease;
+  
+}
+
+@keyframes movement{
+  0%{
+    margin-left:0px;
+    opacity: 0
+  }
+  15%{
+    opacity: 0
+  }
+  100%{
+    
+  }
+}
+.inputs{
+  display:;
+  flex-direction: column;
+width: 410px;
+  transform: translate(27%, 20%);
+}
+#pswrd, #user{
+  height: 43px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  margin-bottom: 20px;
+  width:500px;
+  margin-top:40px;
+  transition:transform 0.4s ease;
+}
+
+  
+ #pswrd:hover{
+  transform: scale(1.02)
+}
+
+ #user:hover{
+  transform: scale(1.02)
+}
+
+.bx-lock,.bx-user{
+   transform: translate(470px, -260%);
+  font-size:20px;
+  color: blueviolet;
+  text-decoration: none;
+  font-weight:500;
+}
+
+
+.Logn{
+  width:400px;
+  height:43px;
+  margin-left:160px;
+  margin-top:70px;
+  font-size:18px;
+  font-family:;
+  letter-spacing: 2px;
+   border-radius: 20px;
+   border: 1px solid blueviolet;
+  background-color:blueviolet;
+  color:white;
+  font-weight:400;
+  transition:transform 0.3s ease;
+}
+
+.Logn:hover{
+  transform: scale(1.03)
+}
+
+p2{
+  margin-left: 334px;
+  padding: 20px;
+  font-size: 20px;
+  
+}
+.google-btn,.facebook-btn{
+  width:450px;
+  height:40px;
+  margin-bottom: 20px;
+  margin-left:135px;
+  margin-top:20px;
+  font-size:16px;
+  border-radius: 10px;
+   border: 1.5px solid blueviolet;
+   transition:transform 0.3s ease;
+}
+img{
+  //transform: translate(250px, 10);
+  margin-left: 40px;
+}
+ .facebook-btn:hover{
+  transform: scale(0.95)
+}
+
+.google-btn:hover{
+  transform: scale(0.95)
+}
+
+#display-msg{
+  color:red;
+  display: flex;
+  align-items: center;
+  
+}
+
+
+

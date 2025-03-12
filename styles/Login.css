@@ -1,0 +1,149 @@
+
+body{
+margin-left:180px;  display:flex;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width:500px;
+  height: vh;
+  transform: translate(40%, 10%);
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 20px;
+   animation:border 4s infinite  ease;
+}
+@keyframes border{
+  0%{
+   border-bottom-color: white;
+    border-left-color: purple;
+    border-right-color:purple;
+    border-top-color: purple;
+  }
+  25%{
+    border-left-color: white;
+    border-bottom-color: purple;
+    border-right-color:purple;
+    border-top-color: purple;
+  }
+  75%{
+border-bottom-color: purple;
+    border-left-color: purple;
+    border-right-color:purple;
+    border-top-color: white;
+  }
+  100%{
+    border-bottom-color: purple;
+    border-left-color: purple;
+    border-right-color:white;
+    border-top-color: purple;
+  }
+}
+p1{
+  color:purple;
+  font-size: 40px;
+  margin-left:135px;
+  padding-bottom: 20px;
+  animation:movement 3s infinite  ease;
+  
+}
+
+@keyframes movement{
+  0%{
+    margin-left:0px;
+    opacity: 0
+  }
+  15%{
+    opacity: 0
+  }
+  100%{
+    
+  }
+}
+.inputs{
+  display:flex;
+  flex-direction: column;
+width: 410px;
+  transform: translate(13%, 20%);
+}
+input{
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid purple;
+  margin-bottom: 20px;
+  transition:transform 0.4s ease;
+}
+
+  
+ input:hover{
+  transform: scale(1.02)
+}
+
+.bx-lock,.bx-user{
+   transform: translate(90%, -260%);
+  font-size:20px;
+  color: purple;
+  animation: rot 3s ease infinite;
+}
+.bx{
+  animation: rot 3s ease infinite;
+}
+
+.Logn{
+  width:400px;
+  height:40px;
+  margin-left:60px;
+  margin-top:20px;
+  font-size:18px;
+  font-family:;
+  letter-spacing: 2px;
+   border-radius: 20px;
+   border: 1px solid purple;
+  background-color:purple;
+  color:white;
+  font-weight:400;
+  transition:transform 0.3s ease;
+}
+
+.Logn:hover{
+  transform: scale(1.03)
+}
+
+p2{
+  margin-left: 230px;
+  padding: 20px;
+  font-size: 20px;
+  
+}
+.google-btn,.facebook-btn{
+  width:400px;
+  height:40px;
+  margin-bottom: 20px;
+  margin-left:50px;
+  font-size:16px;
+  border-radius: 10px;
+   border: 1px solid purple;
+   transition:transform 0.3s ease;
+}
+img{
+  //transform: translate(250%, 10%);
+  margin-left: 40px;
+}
+ .facebook-btn:hover{
+  transform: scale(0.95)
+}
+
+.google-btn:hover{
+  transform: scale(0.95)
+}
+
+#display-msg{
+  color:red;
+  display: flex;
+  align-items: center;
+  
+}

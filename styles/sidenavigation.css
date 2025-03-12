@@ -1,0 +1,210 @@
+.sidenav{
+ background-color: whitesmoke;
+  box-shadow: 2px 3px 3px;
+  position: fixed;
+  top:0;
+  right: 0;
+  height:100vh;
+  width:290px;
+  //display:non;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 999;
+  justify-content: flex-start;
+  box-shadow: 1px 4px 5px;
+  opacity: 0.92;
+   transition:0.8s ease;
+  transform: translateX(300px)
+}
+.sidenav li{
+  margin-bottom: 28px;
+  padding:1px;
+  display: block;
+  padding-right:10px 50px
+}
+.sidenav a{
+   text-decoration: none;
+  color:black;
+ font-size: 18px;
+  padding-left:-10px;
+  transition:0.4s ease;
+}
+.bx-x{
+  color:blueviolet;
+ font-size: 35px;
+  margin-left: -9px;
+ transition:0.4s ease;
+}
+
+.bx-x:hover{
+  transform: rotate(180deg);
+}
+.sidenav .dsd a{
+  padding:5px 50px;
+  border-radius: 5px;
+  margin-left:-50px;
+}
+#home{
+  transform:translateX(-45px)
+}
+.bx-menu{
+  font-size:29px;
+  transition:transform 0.4s ease;
+  display:none;
+ //transform:translateX(1300px) translateY(-40px);
+  position: fixed;
+  z-index: 1;
+  border:1px solid blueviolet;
+  border-radius:5px;
+}
+
+.bx-menu:hover{
+  transform:scale(1.2);
+  background-color:blueviolet;
+}
+
+@media(max-width:800px){
+  .hide{
+    color:white;
+  }
+
+.bx-menu{
+  display:block;
+  }
+   .bx-cart{
+    display:block;;
+   transform:translateX(-310px)  translateY(-70px);
+  }
+  .Logo{
+     transform:translateX(-340px)  translateY(20px);
+  }
+  .Searching{
+    scale:0.90;
+      position:absolute;
+  z-index: 1;
+  transform: translateY(70px) scale(0.85) translateX(-330px);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  #search-btn{
+    transform:translateY(7px);
+  }
+  .Login-btn, .Register-btn{
+      transform:translateX(505px)  translateY(-110px);
+  }
+  
+  .bx-menu{
+      //transform:translateX(732px)  translateY(-38px);
+    margin-left: 730px;
+    margin-top:-38px
+  }
+  #box{
+    transform: translateX(-10px) scale(0.9) translateY(38px);
+  }
+  .cont{
+    transform:translateX(670px) translateY(20px) scale(0.75);
+  }
+  #Footer{
+ transform:scale(0.99);
+    width:770px;
+    height:510px;
+  }
+  
+  
+}
+@media(max-width:400px){
+  .hide{
+    color:white;
+  }
+  #user, #pswrd{
+    transform:scale(1.1)
+  }
+.bx-menu{
+  display:block;
+  }
+   .bx-cart{
+    display:block;;
+   transform:translateX(-175px)  translateY(-70px) scale(0.55);
+  }
+  .Logo{
+     transform:translateX(-190px)  translateY(20px);
+  }
+  .Searching{
+    scale:0.90;
+      position:absolute;
+  z-index: 1;
+  transform: translateY(70px) scale(0.85) translateX(-560px);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  #search-btn{
+    transform:translateY(7px);
+  }
+  .Login-btn, .Register-btn{
+      transform:translateX(148px)  translateY(-110px) scale(0.85);
+    margin-right:-17px
+  }
+  .bx-menu{
+      //transform:translateX(350px)  translateY(-38px);
+    margin-left: 345px;
+    margin-top:-38px;
+  }
+  #box{
+    transform: translateX(-205px) scale(0.6) translateY(-188px);
+  }
+  .cont{
+    transform:translateX(300px) translateY(-5px) scale(0.55);
+  }
+  
+}
+.bx-group,.bx-home,.bx-shopping-bag,.bx-cart,.bx-phone,.bxl-meta{
+  margin-left:10px;
+}
+.social-icons li{
+  display: inline;
+  padding-right:39px;
+  margin-left:-20px
+}
+.social-icons .bx{
+  transition:transform 0.4s ease;
+}
+
+.social-icons .bx:hover{
+  transform:translateY(-6px) scale(1.2)
+}
+.social-icons{
+  padding-top:30px
+}
+.social-icons .bxl-facebook{
+  color:white;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.social-icons .bxl-twitter{
+  color:blue;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-icons .bxl-youtube{
+  color:red;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-icons .bxl-instagram{
+  color:purple;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.social-icons .bxl-whatsapp{
+  color:green;
+  background-color: white;
+  border-radius: 50%;
+}
+
+

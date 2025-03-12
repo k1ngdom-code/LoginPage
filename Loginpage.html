@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="styles/FOOTER.css">
+<link rel="stylesheet" href="styles/sidenavigation.css">
+<link rel="stylesheet" href="styles/LOGINBOXFORM.css">
+
+<style>
+
+.top-nav{
+ background-color: white;
+ / box-shadow: 2px 3px 3px;
+  margin-left:-7px;
+  margin-right:-10px;
+  height:70px;
+  z-index: 1;
+}
+.top{
+  width:100%;
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+  margin-top:-8px;
+  padding-right: 2px;
+  z-index:1;
+}
+.top li{
+  padding-right: 10px;
+  margin-right:70px;
+  transform: translateY(-15px) translateX(200px)
+}
+.top a{
+  text-decoration: none;
+  color:;
+ font-size: 20px;
+  transition:0.4s ease;
+ // padding-left:5px;
+  padding-right:5px;
+  padding-top:5px;
+  padding-bottom:5px;
+  border-radius: 5px;
+ // border-bottom-width: 1px;
+ // border-bottom: 1px solid
+}
+.Logo{
+  transform:translateX(-580px)  translateY(10px);
+  font-size:20px;
+  color:whit;
+  font-family: ;
+  z-index: 1;
+}
+.bx-cart {
+  background-color:blueviolet;
+  padding:10px;
+  position: absolute;
+  border-radius: 50%;
+  font-size:30px;
+  transform: translateY(-80px) translateX(-541px);
+  color:black;
+  box-shadow: inset 2px 3px 5px;
+}
+
+.Login-btn, .Register-btn{
+  background-color: white;
+  color:blueviolet;
+  padding:10px;
+  border-radius: 10px;
+  width:110px;
+border:2px solid blueviolet;
+  transform: translateY(-113px) translateX(1080px);
+  font-size:17px;
+  font-weight:600;
+  font-family:sans-seriff;
+  transition: 0.5s ease;
+}
+.Login-btn::before{
+  content:"";
+  position: absolute;
+  inset:0;
+  display:inline-block;
+  background:blueviolet;
+  border-radius: 8px;
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: -1;
+  transition: transform 0.4s;
+}
+.Login-btn:hover{
+  color:white;
+}
+.Login-btn:hover::before{
+  transform: scaleX(1);
+  transform-origin:left;
+}
+
+
+.Register-btn::before{
+  content:"";
+  position: absolute;
+  inset:0;
+  display:inline-block;
+  background-color:blueviolet;
+  border-radius: 8px;
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: -1;
+  transition: transform 0.4s;
+}
+.Register-btn:hover{
+  color:white;
+}
+.Register-btn:hover::before{
+  transform: scaleX(1);
+  transform-origin:left;
+}
+</style>
+
+<style>
+
+body{
+width:90%;
+}
+
+.Searching{
+  margin-left:400px
+}
+
+input{
+  height: 40px;
+  //border-radius: 20px;
+  border: 2px solid blueviolet;
+  margin-bottom: 25px;
+  transition:transform 0.4s ease;
+  width:400px;
+  margin-right:60px;
+  margin-top:40px;
+  text-decoration:none;
+  border-end-start-radius: 20px;
+  border-start-start-radius: 20px;
+ //transform-origin: left;
+  transition:0.5s ease;
+ 
+}
+
+
+#search-btn{
+  color:white;
+  background-color: blueviolet;
+  padding:15px;
+  margin-left:-65px;
+  transform:translateY(2px);
+  border-end-end-radius: 20px;
+  border-start-end-radius: 20px;
+}
+
+
+
+</style>
+
+<style>
+#icons{
+  display:flex;
+margin-left:7px;
+  margin-top:5px;
+  font-size: 28px;
+  background-color: white;
+   box-shadow: 1px 4px 4px;;
+ width:30px;
+  height:30px;
+  border-radius:50%;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  color:blueviolet;
+  border:1px solid black;
+  cursor:pointer;
+  box-shadow: 2px 2px 3px
+}
+.cont{
+  background-color:blueviolet;
+  width:100px;
+  height: 40px;
+  border-radius:20px;
+  border: 1px solid black;
+  box-shadow: 1px 3px 4px;
+  transform:translateX(1200px) translateY(-80px) scale(0.9);
+  box-shadow: inset 1px 2px 3px 1px;
+}
+
+</style>
+</head>
+<body>
+
+<nav class="top-nav" id ="topnav">
+<ul class="top">
+<li><p class="Logo">carti</p><br><p class="cart-icon"><i class="bx bx-cart"></i></p></li>
+<li class="hide"><a href="Home.html"></a>Home</li>
+<li class="hide"><a href="Cataloguepage.html"></a>Catalogue</li>
+</ul>
+<button class="Login-btn">Login<i class="bx bxs-right-arrow-alt"></i></button>
+<button class="Register-btn">Register<i class="bx bxs-right-arrow-alt"></i></button>
+
+</nav>
+<div class="menu-btn" id="menu" onclick="showSideBar()"><a href="#"></a><i class="bx bx-menu"></i>
+</div>
+
+<nav class="sidenav" id="sidebr">
+<ul class="nd-bar">
+<li class="x-btn" onclick="hideSideBar()" id="hide"><a href="#"><i class="bx bx-x"></i></li>
+<div class="dsd">
+<li id="home"><a href="textbox.html"></a>Home<i class="bx bx-home"></i></li>
+<li><a href="About.html"></a>About<i class="bx bx-group"></i></li>
+<li><a href="Contact.html"></a>Contact Us<i class="bx bx-phone"></i></li>
+<li><a href="Products.html"></a>Catalogue<i class="bx bx-shopping-bag"></i></li>
+<li><a href="Orders.html"></a>Orders<i class="bx bxs-cart"></i></li>
+<li><a href="#"></a>Socials<i class="bx bxl-meta"></i></li>
+</div>
+<ul class="social-icons">
+<li><i class="bx bxl-facebook"></i>
+<li><i class="bx bxl-twitter"></i>
+<li><i class="bx bxl-youtube"></i>
+<li><i class="bx bxl-instagram"></i>
+<li><i class="bx bxl-whatsapp"></i>
+</ul>
+</ul>
+</nav>
+
+
+<div class="Searching">
+<input type="text" id="Search-bar" placeholder="Search for products, name, brand...">
+<i class="bx bxs-search" id="search-btn"></i>
+</div>
+
+<div class="cont" id="containing">
+<i class="bx bx-sun" id="icons"></i>
+</div>
+
+<div class="container" id="box">
+
+<p1>Welcome Back!</p1>
+<div class="inputs">
+
+<input type="text" class="username-box" id="user" placeholder="Username" title="Username" required>
+<i class="bx bx-user"></i>
+
+<input type="password" class="password-box" placeholder="Password"  id="pswrd" required>
+<i class="bx bx-lock"></i>
+
+</div>
+<button class="Logn" id="btnn">Login</button>
+<p2>Or</p2>
+
+<div class="alternatives">
+<button class="google-btn">Continue with google<img src="icons8-google-48.png"></button>
+
+<br>
+
+<button class="facebook-btn">Continue with facebook<img src="icons8-facebook-logo-30.png"></button>
+</div>
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer" id="Footer">
+
+<div class="row-1">
+
+<ul>
+<li><a href="www.facebook.com"></a>Facebook<img src="facebook.png"></li>
+<li><a href="www.instagram.com"></a>Instagram<img src="instagram.png"></li>
+<li><a href="www.telegram.com"></a>Telegram<img src="telegram.png"></li>
+<li><a href="www.youtube.com"></a>Youtube<img src="youtube.png"></li>
+<li><a href="#"></a>Whatsapp<img src="whatsapp.png"></li>
+<li><img src="phone-call.png"> +2347065004320</li>
+</ul>
+
+</div>
+
+<div class="row-2">
+<ul>
+
+<li>Terms and conditions</li>
+<li>About Us</li>
+<li>Disclaimers</li>
+<li>Privacy Policy</li>
+</ul>
+
+</div>
+
+<div class="row-3">
+<p4>Subscribe to our newsletter<input type="text" id ="Newsletter" placeholder="example@gmail.com"><i class="bx bx-message"></i></p4>
+
+</div>
+<div class="row-4">
+<p class="foot">Copyright 2025. All rights reserved</p>
+
+</div>
+</div>
+
+<script>
+const SearchBtn=document.getElementById("search-btn");
+const SearchBar=document.getElementById("Search-bar");
+
+SearchBtn.addEventListener("click" , function(){
+  if(SearchBtn.classList.contains("bxs-search")){
+    SearchBtn.classList.remove("bxs-search");SearchBtn.classList.add("bx-search");SearchBar.style.width="0px";SearchBar.style.backgroundColor="blueviolet";SearchBar.style.color="purple";SearchBar.style.marginLeft="200px"
+  }else{
+     SearchBtn.classList.remove("bx-search");SearchBtn.classList.add("bxs-search");SearchBar.style.width="400px";SearchBar.style.backgroundColor="white";SearchBar.style.color="black";SearchBar.style.marginLeft="0px"
+  }
+})
+
+const container=document.getElementById("containing");
+const icon=document.getElementById("icons");
+const body=document.querySelector("body");
+const topnav=document.getElementById("topnav");
+const login=document.getElementById("Loginbtn");
+const register=document.getElementById("Registerbtn");
+const footer=document.getElementById("Footer");
+const contain=document.getElementById("box");
+const menubtn=document.getElementById("menu");
+
+container.addEventListener("click" , function(){
+  if(icon.classList.contains("bx-sun")){
+    icon.classList.remove("bx-sun");icon.classList.add("bx-moon");body.style.backgroundColor="black";icon.style.marginLeft="65px";topnav.style.backgroundColor="black";icon.style.Color="black";container.style.backgroundColor="black"; container.style.borderColor="blueviolet";topnav.style.backgroundColor="black"; topnav.style.color="white";footer.style.borderColor="blueviolet"; footer.style.backgroundColor="black" ;contain.style.backgroundColor="black" ;menubtn.style.color="blueviolet";
+  }else{
+    icon.classList.remove("bx-moon");icon.classList.add("bx-sun");body.style.backgroundColor="white";icon.style.marginLeft="7px";topnav.style.backgroundColor="white";icon.style.Color="blueviolet";container.style.backgroundColor="blueviolet";container.style.borderColor="black"; topnav.style.backgroundColor="white"; topnav.style.color="black";footer.style.borderColor="white"; footer.style.backgroundColor="blueviolet" ;contain.style.backgroundColor="whitesmoke";menubtn.style.color="black" 
+  }
+})
+
+const sidenav=document.getElementById("sidebr");
+
+function showSideBar(){
+ sidenav.style.transform="translateX(0px)";
+} function hideSideBar(){
+sidenav.style.transform="translateX(300px)";
+}
+</script>
+
+
